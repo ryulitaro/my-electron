@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <!-- Custom styles for this template -->
+  <link href="scss/custom.css" rel="stylesheet">
+  <title>TOP</title>
+</head>
+
+<body>
+  <header class="navbar sticky-top p-2 shadow">
+    <div class="container-fluid">
+      ThinQ On Premise
+    </div>
+  </header>
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenuUser" class="col-lg-1 col-3 sidebar">
+        <div class="position-sticky pt-3">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                <span data-feather="log-in"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="sidebarMenu" class="col-lg-2 col-3 d-block sidebar offset-1 offset-lg-1 offset-3">
+        <div class="position-sticky pt-3">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">
+                <span data-feather="plus-circle"></span>
+                기기 등록
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="x-circle"></span>
+                기기 삭제
+              </a>
+            </li>
+            <li class="nav-item" id="register">
+              <a class="nav-link" aria-current="page" href="#">
+                <span data-feather="list"></span>
+                기기 목록
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="square"></span>
+                기기 상태
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="user-check"></span>
+                테스트
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main class="col-lg-9 col-6 px-4 offset-lg-3 offset-6">
+        <div class="row">
+          <div
+            class="d-flex justify-content-between flex-wrap flex-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">로보트1</h1>
+            <div class="btn-toolbar mb-2 mb-0">
+              <div class="btn-group me-2">
+                <button id="btn-on" type="button" class="btn btn-sm btn-outline-secondary">On</button>
+                <button id="btn-off" type="button" class="btn btn-sm btn-outline-secondary">Off</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">로보트2
+              <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </h1>
+            <div class="btn-toolbar mb-2 mb-0">
+              <div class="btn-group me-2">
+                <button type="button" class="btn btn-sm btn-outline-secondary">On</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Off</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="d-flex justify-content-between flex-wrap flex-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">로보트3
+              <span class="badge rounded-pill bg-primary text-dark">Off</span>
+            </h1>
+            <div class="btn-toolbar mb-2 mb-0">
+              <div class="btn-group me-2">
+                <button type="button" class="btn btn-sm btn-outline-secondary">On</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Off</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex p-2 bd-highlight">I'm a flexbox container!</div>
+      </main>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
+    integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE"
+    crossorigin="anonymous"></script>
+  <script src="js/renderer.js"></script>
+</body>
+
+</html>
